@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "MoneyCanBuyToken",
+    "name": "MoneyCanBuy.fun",
+    "symbol": "YOLO",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8000,
+    "initialMarketCapWei": "4000000000000000000000",
+    "remainderTo": "0x612a9bb008e16ef2d24f41dae9fc661831d93367"
+  },
+  "notes": "MoneyCanBuyToken is a fixed-supply ERC-20 named MoneyCanBuy.fun (YOLO) with 18 decimals. Its parameterless constructor mints all 1,000,000,000 tokens once to msg.sender, the launch factory. It has no transfer fees, additional minting, or administrative controls. No application contracts are deployed. pool.initialPrice is provenance only; the deployer derives the opening price from economics.initialMarketCapWei and token.totalSupply."
+}
